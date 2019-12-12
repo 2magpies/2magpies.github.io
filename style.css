@@ -1,0 +1,19 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+.quote {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14pt;
+    font-style: italic;
+    text-align: center;
+    color: gray;
+
+}

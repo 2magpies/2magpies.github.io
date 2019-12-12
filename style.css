@@ -2,8 +2,15 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+.img-one {
+    width: 100%;
+
+}
+
 header {
     text-align: center;
+    color: gray;
+    font-size: 24pt;
 }
 
 nav {
@@ -16,4 +23,29 @@ nav {
     text-align: center;
     color: gray;
 
+}
+.contact-grid {
+    display: grid;
+    grid-auto-columns: auto;
+}
+h2 {
+    color: gray;
+    text-align: center;
+}
+
+.contact1 {
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+}
+.linkedin {
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
+.copyright {
+    font-size: 8;
+    text-align: center;
 }

@@ -1,0 +1,428 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+/*
+==Global Styles
+*/
+@font-face {
+  font-family: Proxima_Bold;
+  src: url(../fonts/Proxima_Nova_Alt_Bold.otf);
+}
+
+@font-face {
+  font-family: Proxima_Light;
+  src: url(../fonts/Proxima_Nova_Alt_Light.otf);
+}
+
+@font-face {
+  font-family: Proxima_Regular;
+  src: url(../fonts/Proxima_Nova_Alt_Regular.otf);
+}
+
+@font-face {
+  font-family: Signature;
+  src: url(../fonts/daniel.ttf);
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.studio-shadow {
+  webkit-box-shadow: 0 8px 6px -6px #7a7a7a;
+  -moz-box-shadow: 0 8px 6px -6px #7a7a7a;
+  box-shadow: 0 8px 6px -6px #7a7a7a;
+}
+
+/*
+==Wrapper Styles
+*/
+.wrapper {
+  margin: 10px;
+}
+
+/*
+==Header Styles
+*/
+.studio-header {
+  background-color: #ffffff;
+  height: auto;
+  width: auto;
+}
+
+/*
+==Header Styles
+*/
+.studio-header-bg {
+  height: 100vh;
+  /*CHANGE BACKGROUND IMAGE HERE*/
+  background: url('../imgs/daphne-camera.jpg') no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*
+==Nav links Styles
+*/
+.studio-nav {
+  padding-top: 40px;
+}
+
+.studio-nav ul {
+  float: right;
+}
+
+.studio-nav li {
+  padding-right: 50px;
+  padding-left: 0;
+}
+
+.studio-nav li a {
+  opacity: 1;
+  color: #e4dcda;
+  font-size: 16px;
+  font-family: Proxima_Light;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.studio-nav li a:hover {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+  transition: color 0.4s linear;
+  -webkit-transition: 0.4s;
+}
+
+.studio-nav li a:focus {
+  text-decoration: none;
+}
+
+/*
+==Signature Styles
+*/
+
+.studio-signature {
+  text-align: center;
+  color: #000000;
+  height: 230px;
+  margin: 160px 0 0 0;
+  padding-top: 35px;
+}
+
+.studio-signature h1 {
+  font-family: Signature;
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.studio-signature h2 {
+  font-family: Proxima_Bold;
+  text-transform: uppercase;
+  font-size: 48px;
+  letter-spacing: 16px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.studio-signature span {
+  font-family: Proxima_Light;
+  font-size: 22px;
+  color: #7f7a79;
+}
+
+/*
+==About Styles
+*/
+.studio-about {
+  padding: 100px;
+  color: #000000;
+  height: auto;
+}
+
+.studio-about h3 {
+  font-family: Proxima_Regular;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.studio-about p {
+  font-family: Proxima_Regular;
+  font-size: 16px;
+  color: #000000;
+  line-height: 30px;
+}
+
+/*
+==Section Styles
+*/
+.studio-section {
+  padding: 100px 100px 0 100px;
+}
+
+.studio-section-header {
+  margin-bottom: 50px;
+}
+
+.studio-section h1 {
+  font-family: Proxima_Regular;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*
+==Work Styles
+*/
+.studio-work {
+  margin-bottom: 100px;
+}
+
+.studio-work-text {
+  margin-top: 35px;
+}
+
+.studio-work-text.right {
+  text-align: right;
+}
+
+.studio-work img {
+  width: 520px;
+}
+
+.studio-work h1 {
+  font-family: Proxima_Bold;
+  font-size: 30px;
+  text-transform: none;
+}
+
+.studio-work h2 {
+  font-family: Proxima_Regular;
+  font-size: 16px;
+  color: #7f7a79;
+  line-height: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.studio-work h3 {
+  font-family: Proxima_Regular;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.studio-work h3:hover {
+  text-decoration: underline;
+}
+
+/*
+==Footer Styles
+*/
+.studio-footer {
+  background-color: #ffffff;
+  padding: 60px;
+  color: #000000;
+}
+
+.studio-footer-content {
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+
+.studio-footer p {
+  margin-bottom: 0;
+}
+
+/*Social LINKS*/
+.social-links {
+  margin-bottom: 15px;
+}
+
+.social-links li {
+  padding: 0 8px 0 8px;
+}
+
+.social-links .list-inline > li:first-child {
+  padding-left: 8px !important;
+}
+
+.social-links li a {
+  opacity: 1;
+  color: #000000;
+  font-size: 16px;
+  padding-bottom: 4px;
+  font-family: Proxima_Regular;
+  cursor: pointer;
+}
+
+.social-links li a:hover {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+}
+
+.social-links li a:focus {
+  text-decoration: none;
+}
+
+/*Contact BTN*/
+.studio-contact {
+  margin-bottom: 60px;
+}
+
+.contact-btn {
+  border: 1px solid #000000;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 12px 40px 12px 40px;
+  text-transform: uppercase;
+}
+
+.contact-btn:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #000000;
+  text-decoration: none;
+  transition: color, background-color 0.4s linear;
+  -webkit-transition: 0.4s;
+}
+
+.contact-btn:visited {
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+}
+.contact-btn:active,
+.contact-btn:focus {
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*
+==Modal Styles
+*/
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+
+.row01-modal,
+.row02-modal,
+.row03-modal,
+.row04-modal {
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .row01-modal .modal-dialog,
+  .row02-modal .modal-dialog,
+  .row03-modal .modal-dialog,
+  .row04-modal .modal-dialog {
+    top: 15%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .row01-modal .modal-dialog,
+  .row02-modal .modal-dialog,
+  .row03-modal .modal-dialog,
+  .row04-modal .modal-dialog {
+    width: 70%;
+  }
+}
+
+/*
+==Media Query Styles for better responsive
+*/
+@media screen and (max-width: 480px) {
+  .studio-nav ul {
+    float: none;
+    text-align: center;
+  }
+
+  .studio-nav li {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  /*
+    ==Signature Styles
+    */
+  .studio-signature {
+    margin: 140px 0 0 0;
+  }
+
+  .studio-signature h1 {
+    font-size: 60px;
+  }
+
+  .studio-signature h2 {
+    font-size: 38px;
+  }
+
+  .studio-signature span {
+    font-size: 20px;
+  }
+
+  /*
+    ==About Styles
+    */
+  .studio-about {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  /*
+    ==work Styles
+    */
+  .studio-section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  /*
+    ==Footer Styles
+    */
+  .studio-footer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  /*
+    ==Nav Styles for smaller screens
+    */
+  .studio-nav li {
+    padding-right: 0;
+    padding-left: 0;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .studio-nav li:last-child {
+    margin-bottom: 0;
+  }
+}

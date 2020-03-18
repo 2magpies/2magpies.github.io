@@ -1,38 +1,667 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
     <title>Daphne</title>
-</head>
-<img class="img-one" src="images/smacktag-wireframe-user-flow.png" alt="Listener User Flow" width>
-<body>
-    <header>Technology Professional</header>
-    <nav>
-        <a href="#">Research</a> |
-        <a href="#">Design</a> |
-        <a href="#">Code</a> 
-    </nav>
-    <p>
-        <div class="quote"> I value the symbiotic nature of art and technology. <br>
-            My desire is to craft experiences that engage, enlighten, and empower users.
+
+    <!--Meta tags-->
+    <meta name="description" content="Photo Studio Portfolio" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,Jquery,Bootstrap" />
+    <meta name="author" content="Photo Studio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Favicon-->
+    <link rel="icon" href="imgs/favicon.ico" type="image/gif" sizes="16x16" />
+
+    <!--Styles-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="wrapper">
+        <div class="studio-header">
+          <div class="studio-header-bg">
+            <div class="studio-nav">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <ul class="list-inline">
+                    <!--Nav-bar Links-->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!--Signature Content-->
+            <div class="studio-signature">
+              <div class="row margin-0">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <!--Signature Text Here-->
+                  <h1>Portfolio</h1>
+                  <h2>daphne mintz</h2>
+                  <span>Researcher > Designer > Engineer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="about" class="studio-about">
+            <div
+              class="row"
+              data-aos="fade-left"
+              data-aos-once="true"
+              data-aos-duration="800"
+            >
+              <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
+                <!--About Title-->
+                <h3>About</h3>
+                <!--About Text-->
+                <p>
+                  My name is <i>Daphne Mintz</i>. I'm a
+                  <i>full stack software engineer</i> with a background in
+                  product design. Writing code is what I like to do. Every app I
+                  build is a journey. My approach can be summed up with, "Learn
+                  from your users, design for them, make their day a better
+                  tomorrow. The important thing is not to stop exploring their
+                  experience."
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        
-    </p>
 
-    <div class="contact-grid">
-            <h2 class="contact1">contact me | </h2>
-    <p class="linkedin"><a href="https://www.linkedin.com/in/daphnemintz/">LINKEDIN.COM/IN/DAPHNEMINTZ</a></p>
+        <div id="work" class="studio-section">
+          <div class="studio-section-header">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <!--Work Title-->
+                <h1>Work</h1>
+              </div>
+            </div>
+          </div>
 
+          <!--Art Photos-->
+          <div class="studio-work">
+            <div
+              class="row"
+              data-aos="fade-left"
+              data-aos-once="true"
+              data-aos-duration="800"
+            >
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <img
+                  src="imgs/row01/Surfer-trivia – 1.png"
+                  alt=""
+                  class="img-responsive studio-shadow"
+                />
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="studio-work-text">
+                  <!--Title-->
+                  <h1>Surfer Trivia</h1>
+                  <!--Text-->
+                  <h2>
+                    <i>Surfer Trivia</i> is designed to test your knowledge of
+                    surfing history, technology, competition rules, and locales.
+
+                    Design included putting pencil to paper to create initial wireframes, and then, building a prototype with Adobe XD. The app is coded entirely in HTML, CSS, and Javascript.
+                  </h2>
+                  <h3 data-toggle="modal" data-target=".row01-modal">
+                    Wireframes and Initial Version
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Surfer Trivia MODAL-->
+          <div
+            class="modal fade row01-modal"
+            tabindex="-1"
+            role="dialog"
+            aria-label="row01-modal"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div
+                  id="row01-carousel"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li
+                      data-target="#row01-carousel"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li data-target="#row01-carousel" data-slide-to="1"></li>
+                    <li data-target="#row01-carousel" data-slide-to="2"></li>
+                    <li data-target="#row01-carousel" data-slide-to="3"></li>
+                    <li data-target="#row01-carousel" data-slide-to="4"></li>
+                    <li data-target="#row01-carousel" data-slide-to="5"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img
+                        src="imgs/row01/dreams.jpg"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="imgs/row01/nature.jpeg"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="imgs/row01/object.jpeg"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="imgs/row01/her.jpeg"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="imgs/row01/people.jpeg"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+                  <a
+                    class="left carousel-control"
+                    role="button"
+                    data-slide="prev"
+                    onclick="$('#row01-carousel').carousel('prev')"
+                  >
+                    <span
+                      class="glyphicon glyphicon-chevron-left cursor"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="right carousel-control"
+                    role="button"
+                    data-slide="next"
+                    onclick="$('#row01-carousel').carousel('next')"
+                  >
+                    <span
+                      class="glyphicon glyphicon-chevron-right cursor"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--People Photos-->
+          <div class="studio-work">
+            <div
+              class="row"
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-duration="800"
+            >
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="studio-work-text right">
+                  <!--Title-->
+                  <h1>Let's Cook</h1>
+                  <!--Text-->
+                  <h2>
+                    <i>Let’s Cook!</i> is for people that love to cook. The application automatically features a recipe and provides users the option for the app to suggest a different recipe. The recipes are crowd-sourced and come from all over the world via TheMealDB.
+
+                    The technologies used include React (using Hooks), CSS Flexbox, Heroku, third-party API, and GitHub.
+
+
+                  </h2>
+                  <h3 data-toggle="modal" data-target=".row02-modal">
+                    More people photos
+                  </h3>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <img
+                  src="imgs/row01/people.jpeg"
+                  alt=""
+                  class="img-responsive studio-shadow pull-right"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- People MODAL-->
+          <div
+            class="modal fade row02-modal"
+            tabindex="-1"
+            role="dialog"
+            aria-label="row02-modal"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div
+                  id="row02-carousel"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li
+                      data-target="#row02-carousel"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li data-target="#row02-carousel" data-slide-to="1"></li>
+                    <li data-target="#row02-carousel" data-slide-to="2"></li>
+                    <li data-target="#row02-carousel" data-slide-to="3"></li>
+                    <li data-target="#row02-carousel" data-slide-to="4"></li>
+                    <li data-target="#row02-carousel" data-slide-to="5"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img
+                        src="http://placehold.it/1280x851"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="http://placehold.it/1280x851"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="http://placehold.it/1280x851"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="http://placehold.it/1280x851"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="http://placehold.it/1280x851"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+                  <a
+                    class="left carousel-control"
+                    role="button"
+                    data-slide="prev"
+                    onclick="$('#row02-carousel').carousel('prev')"
+                  >
+                    <span
+                      class="glyphicon glyphicon-chevron-left cursor"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="right carousel-control"
+                    role="button"
+                    data-slide="next"
+                    onclick="$('#row02-carousel').carousel('next')"
+                  >
+                    <span
+                      class="glyphicon glyphicon-chevron-right cursor"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Object Photos -->
+          <div class="studio-work">
+            <div
+              class="row"
+              data-aos="fade-left"
+              data-aos-once="true"
+              data-aos-duration="800"
+            >
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <img
+                  src="imgs/row01/dreams.jpg"
+                  alt=""
+                  class="img-responsive studio-shadow"
+                />
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="studio-work-text">
+                  <!--Title-->
+                  <h1>Dreams</h1>
+                  <!--Text-->
+                  <h2>
+                    Once an dream has been incorporated in a picture it accepts
+                    a new destiny. Every beloved dream is the center point of a
+                    paradise. Take an dream. Do something to it. Do something
+                    else to it.
+                  </h2>
+                  <h3 data-toggle="modal" data-target=".row03-modal">
+                    More dreams photos
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Object MODAL-->
+          <div
+            class="modal fade row03-modal"
+            tabindex="-1"
+            role="dialog"
+            aria-label="row03-modal"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div
+                  id="row03-carousel"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li
+                      data-target="#row03-carousel"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li data-target="#row03-carousel" data-slide-to="1"></li>
+                    <li data-target="#row03-carousel" data-slide-to="2"></li>
+                    <li data-target="#row03-carousel" data-slide-to="3"></li>
+                    <li data-target="#row03-carousel" data-slide-to="4"></li>
+                    <li data-target="#row03-carousel" data-slide-to="5"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img
+                        src="http://placehold.it/1280x851"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="http://placehold.it/1280x851"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="http://placehold.it/1280x851"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="http://placehold.it/1280x851"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="http://placehold.it/1280x851"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+                  <a
+                    class="left carousel-control"
+                    role="button"
+                    data-slide="prev"
+                    onclick="$('#row03-carousel').carousel('prev')"
+                  >
+                    <span
+                      class="glyphicon glyphicon-chevron-left cursor"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="right carousel-control"
+                    role="button"
+                    data-slide="next"
+                    onclick="$('#row03-carousel').carousel('next')"
+                  >
+                    <span
+                      class="glyphicon glyphicon-chevron-right cursor"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unknown Photos -->
+          <div class="studio-work">
+            <div
+              class="row"
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-duration="800"
+            >
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="studio-work-text right">
+                  <!--Title-->
+                  <h1>Nature</h1>
+                  <!--Text-->
+                  <h2>
+                    Maybe it is worth investigating the unknown, if only because
+                    the very feeling of not knowing is a painful one. The mind
+                    loves the unknown. It loves images whose meaning is unknown,
+                    ince the meaning of the mind itself is unknown.
+                  </h2>
+                  <h3 data-toggle="modal" data-target=".row04-modal">
+                    More nature photos
+                  </h3>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <img
+                  src="imgs/row01/nature.jpeg"
+                  alt=""
+                  class="img-responsive studio-shadow pull-right"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Unknown MODAL-->
+          <div
+            class="modal fade row04-modal"
+            tabindex="-1"
+            role="dialog"
+            aria-label="row04-modal"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div
+                  id="row04-carousel"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li
+                      data-target="#row04-carousel"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li data-target="#row04-carousel" data-slide-to="1"></li>
+                    <li data-target="#row04-carousel" data-slide-to="2"></li>
+                    <li data-target="#row04-carousel" data-slide-to="3"></li>
+                    <li data-target="#row04-carousel" data-slide-to="4"></li>
+                    <li data-target="#row04-carousel" data-slide-to="5"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img
+                        src="imgs/row01/dreams.jpg"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="imgs/row01/nature.jpeg"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="imgs/row01/object.jpeg"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="imgs/row01/her.jpeg"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="imgs/row01/people.jpeg"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+                  <a
+                    class="left carousel-control"
+                    role="button"
+                    data-slide="prev"
+                    onclick="$('#row04-carousel').carousel('prev')"
+                  >
+                    <span
+                      class="glyphicon glyphicon-chevron-left cursor"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="right carousel-control"
+                    role="button"
+                    data-slide="next"
+                    onclick="$('#row04-carousel').carousel('next')"
+                  >
+                    <span
+                      class="glyphicon glyphicon-chevron-right cursor"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="contact" class="studio-footer">
+          <div class="row">
+            <div class="studio-footer-content text-center">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <!-- Contact BTN -->
+                  <div class="studio-contact">
+                    <a class="contact-btn" href="mailto:daphnemintz@yahoo.com">Contact</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <!-- Footer Information -->
+                  <div class="social-links">
+                    <ul class="list-inline">
+                      <!--Nav-bar Links-->
+                      <li>
+                        <a
+                          target="_blank"
+                          href="https://www.linkedin.com/in/daphnemintz/"
+                          >LinkedIn</a
+                        >
+                      </li>
+                      <li>
+                        <a target="_blank" href="https://github.com/2magpies"
+                          >GitHub</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="https://www.instagram.com/daphnemintz/"
+                          >Instagram</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <p>&copy;2020 Daphne Mintz, All Rights Reserved</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <footer>
-       
-        <p class="copyright">Copyright 2019 Daphne Mintz</p>
-    </footer>
-        
-    
-</body>
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>

@@ -237,6 +237,19 @@ body {
   text-decoration: underline;
 }
 
+.studio-external h3 {
+  font-family: Proxima_Regular;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 4px;
+  color: black;
+}
+
+.studio-external h3:hover {
+  text-decoration: underline;
+}
+
+
 /*
 ==Footer Styles
 */
